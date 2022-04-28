@@ -1,55 +1,173 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .container {
-            margin-top: 5rem;
-            width: 100%;
-        }
-        p {
-            margin-bottom: 3rem;
-        }
-        .swatches {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
-
-        }
-        .swatches li {
-            aspect-ratio: 1;
-            display: grid;
-            place-content: center;
-            border-radius: .5rem;
-            font-size: 3rem;
-            text-align: center;
-            border: 1px solid var(--color-shadow);
-        }
-    </style>
-</head>
-<body>
-    <main class="container">
-        <h1>Bygg din kampanj</h1>
-        <p>Välj en mall/tema kopiera html filen, skapa en tema-dittnamn.css och länka den.</p>
-        <ul class="swatches">
-            <li>
-                <a href="theme-no.html">Utan tema</a>
-            </li>
-            <li>
-                <a href="theme-1.html">Tema 1</a>
-            </li>
-            <li>
-                <a href="theme-2.html">Tema 2</a>
-            </li>
-        </ul>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/theme-1.css" /> <!-- prova att ta bort -->
+        <title>Kampanj</title>
+    </head>
+    <body>
+        <!-- https://jensnti.github.io/wu-exempel/hamburgermeny/ -->
+        <nav class="navbar">
+            <a class="brand" href="#">Censurering är dåligt</a>
+            <button class="navbar__toggle">
+                <span class="material-icons"> menu </span>
+            </button>
+            <div class="navbar__collapse">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Intro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="container">
+                <h1>Google censur giganten</h1>
+                <p>
+                    Google censurerar väldigt mycket, det mesta är bra t.ex.
+                    så tar google bort olagliga saker som barnpornografi.
+                    Men google har även en censur på sin sökmotor vilket
+                    gör det svårare att hitta saker som är olämpligt för
+                    barn som t.ex. våldsamma videor och porr. Enligt <a class="b" href="https://en.wikipedia.org/wiki/Censorship_by_Google">Wikipedia</a> (Hämtad 2022-02-25)
+                    så har google även tagit bort flera naken bilder på kändisar som har
+                    kommit ut av misstag. Länder kan även fråga google om att få någonting
+                    borttaget.
+                </p>
+                <!-- https://jensnti.github.io/wu-exempel/knappar/ -->
+                <div class="cta">
+                    <a href="#cta" class="btn">Call to action</a>
+                </div>
+            </div>
+            <!-- kolla css vad denna gör, ligger över hela hero för att texten ska gå att läsa, kontrast -->
+            <div class="overlay"></div>
+        </header>
+        <!-- https://jensnti.github.io/wu-exempel/media-queries/ -->
+        <main class="container">
+            <section class="intro" id="intro">
+                <h2>Dålig censurering</h2>
+                <p>
+                    Dålig censurering är när google tar bort videor från
+                    youtube för att dom anser att det inte är anpassat för
+                    barn eftersom någon i videon skämtar om något känsligt
+                    eller använder copyright music. En anledning till att
+                    det här är dåligt är att folk inte vågar göra skämt
+                    eller säga vad dom tycker, vilket leder till att alla
+                    kanaler blir mer anpassad för familj och barn. Om dom
+                    gör det ändå så kan google bestämma sig för att inte
+                    visa några annonser på videon vilket betyder att
+                    skaparen inte får några pengar för sitt arbete.
+                    I värsta fall kan videon bli ner tagen från hemsidan.
+                </p>
+                <p>
+                    Vissa säger att sidan måste vara barnvänlig så att alla
+                    kan använda och ta del av median, men google har gjort
+                    ändringar för att förbättra det för barn som t.ex. på
+                    youtube finns det youtube kids och deras search engine
+                    är mer anpassad för barn, så det är svårare att hitta
+                    sidor som google anser olämpligt för barn och väldigt
+                    många sidor är även blockerade så att det inte ens går
+                    att komma in på sidan.
+                </p>
+                <h3>Svårigheter med censur</h3>
+                <p>
+                    Det blir väldigt svårt för kanaler att göra
+                    undervisningsinnehåll och informativa videor
+                    om vissa ämnen som t.ex. tysklands historia
+                    eftersom dom inte får ta fram bilder på hakkors
+                    eller en bild som innehåller någon slags våld
+                    eftersom om google tycker att videon går emot
+                    deras användarvillkor kan dom ta ner videon.
+                </p>
+                <p>
+                    Jag tycker att google borde censurera mindre.
+                    En viss andel censur är nödvändig för att sidan
+                    ska vara tillgänglig till alla. t.ex. så har
+                    dom halv censurerat väldigt mycket på deras
+                    sökmotor så att saker som google anser vara
+                    farligt för allmänheten och känsligt material
+                    är svårare att hitta, men oftast går det
+                    fortfarande att hitta om man söker på exakt
+                    vad man vill ha. Google censurerar dock
+                    så extremt mycket att det kan vara svårt
+                    att göra undervisningsinnehåll eftersom
+                    det finns så många regler och ord som man
+                    måste undvika för att kunna känna någon
+                    slags inkomst från sin kanal.
+                </p>
+            </section>
+            <section class="about">
+                <div>
+                    <h2>Konsekvenser</h2>
+                    <p>
+                        I sin
+                        <a class="b" href="https://www.gp.se/ledare/i-den-nya-offentligheten-kan-vem-som-helst-censureras-1.39508918">artikel</a>
+                        om censurering så skriver Adam Cwejman (Skriven 13:00 - 5 jan, 2021)
+                        att kanaler på youtube kan bli nedtagna utan varning
+                        eller oftast så blir dom “shadowbanned” vilket betyder
+                        att deras video blir svårare att hitta. Detta kan
+                        hända utan att du märker det och kan leda till att
+                        videon inte gör lika bra eftersom folk har svårare
+                        att hitta den. Personer kan bli väldigt omotiverade
+                        av detta eftersom dom helt plötsligt får mindre
+                        visningar och mindre pengar. Ett exempel på det
+                        här är youtube kanalen Triggernometry där deras
+                        intervju med författaren Peter Hitchens blev
+                        borttagen från deras sökmotorer och blev näst
+                        intill omöjligt att hitta om man inte först
+                        gick in på hans kanal och sedan letade efter
+                        videon. Vi vet fortfarande inte anledningen
+                        till det här eftersom google inte berättar
+                        varför dom censurerar men vi tror att det
+                        är för att titeln för videon var “Lockdown is a Catastrophe”
+                        vilket inte är så kontroversiellt.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/googleirl.jpg" alt="Google">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <ul>
+                    <li>
+                        Photo by
+                        <a
+                            href="https://unsplash.com/photos/jz4ca36oJ_M"
+                            >Mitchell Luo</a
+                        >
+                        on
+                        <a
+                            href="https://unsplash.com/photos/jz4ca36oJ_M"
+                            >Unsplash</a
+                        >
+                    </li>
+                    <li>
+                        Photo by
+                        <a
+                            href="https://unsplash.com/photos/fpZZEV0uQwA"
+                            >Pawel Czerwinski</a
+                        >
+                        on
+                        <a
+                            href="https://unsplash.com/photos/fpZZEV0uQwA"
+                            >Unsplash</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script defer src="js/menu.js"></script>
+    </body>
 </html>
