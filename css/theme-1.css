@@ -1,8 +1,9 @@
 :root {
-    --color-light-transparent: hsla(0, 0%, 94%, 0.9);
-    --color-primary: hsl(20deg 40% 53%);
-    --color-secondary: hsl(344deg 45% 13%);
-
+    --color-light: hsl(0, 0%, 94%);
+    --color-dark: hsl(0, 0%, 20%);
+    --color-shadow: hsla(0, 0%, 13%, 0.2);
+    --color-primary: lightblue;
+    --color-secondary: black;
     --font-headline: serif;
 }
 
@@ -27,7 +28,7 @@ h1, h2, h3 {
 }
 
 .navbar {
-    background-color: var(--color-light-transparent);
+    background-color: var(--color-primary);
     position: sticky;
     top: 0;
 }
@@ -57,7 +58,7 @@ h1, h2, h3 {
 
 .btn:hover {
     color: black;
-    background-color: lightblue;
+    background-color: #6060ff;
 }
 
 
