@@ -24,7 +24,7 @@ lägg till färger och fixa bilder, eventuellt ändra layout
 
 ## Vecka 20
 
-
+Validera och kolla efter error.
 
 ## Vecka 21 Kristi himmels
 
